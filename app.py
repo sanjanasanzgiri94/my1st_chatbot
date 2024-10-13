@@ -5,13 +5,6 @@ import streamlit as st
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 # Function to generate text with continuous stream
-def generate_text(prompt):
-    # Initialize an empty string for the response
-    response_text = ""
-
-    # Create a placeholder to update the message progressively
-    chat_placeholder = st.empty()
-
 def analyze_sentiment(review, category):
     prompt = f"Analyze the sentiment of the following {category} review and classify it as Positive, Negative, or Neutral:\n\nReview: {review}"
 
@@ -42,17 +35,4 @@ def main():
 
 # Run the main function
 main()
-    # Return final response text
-    return review
-
-# Streamlit UI setup
-#st.title("My first bot")
-#st.write("anything ")
-
-# User input
-#user_input = st.text_input("You:", placeholder="Type your question here...")
-
-# If there's a user input, get the response from the chatbot
-#if user_input:
-#    st.write("You: " + user_input)
-#    generate_text(user_input)
+   
