@@ -43,16 +43,16 @@ def main():
 # Run the main function
 main()
     # Return final response text
-    return response_text
+    return review
 
 # Streamlit UI setup
 #st.title("My first bot")
 #st.write("anything ")
 
 # User input
-user_input = st.text_input("You:", placeholder="Type your question here...")
+#user_input = st.text_input("You:", placeholder="Type your question here...")
 
 # If there's a user input, get the response from the chatbot
-if user_input:
-    st.write("You: " + user_input)
-    generate_text(user_input)
+#if user_input:
+#    st.write("You: " + user_input)
+#    generate_text(user_input)
